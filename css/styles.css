@@ -193,10 +193,14 @@ margin-right: 93px;
 /*------------Main-------------------*/
 
 .main-section {
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg.jpg);
+      background-repeat: no-repeat;
+      max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--main-content-color);
-    background-image: url(../images/hero-bg.jpg) 
+    background-color: var(--main-content-color); 
 }
 .main-section-title {
     font-weight: 900;
@@ -321,7 +325,7 @@ align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .our-team-item {
@@ -336,6 +340,86 @@ align-items: center;
 {
     margin-right: 30px;}
 
+    .our-team-soc-link {
+        width: 44px;
+        height: 44px;
+        
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-team-soc-icon {
+        fill: #AFB1B8;
+    }
+     
+    .our-team-soc-link:hover {
+background-color: #2196F3;
+    }
+
+    .our-team-soc-link:hover .our-team-soc-icon {
+        fill: #FFFFFF;
+    }
+    .our-team-soc-list {
+        display: flex;
+        justify-content: center;
+        padding-right: 32px;
+        padding-bottom: 30px;
+        padding-left: 32px;
+    }
+
+    .our-team-soc-item:not(:last-child) {
+        margin-right: 10px;
+    }
+   
+
+    /*--------------Clients----------*/
+
+    .clients-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    .clients-list {
+        display: flex;
+        justify-items: center;
+        margin: auto;
+        pad
+    }
+
+    .clients-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .clients-item {
+        width: 170px;
+        height: 92px;
+        fill: #AFB1B8;
+        border: 1px solid #AFB1B8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clients-item:hover {
+        fill: #2196F3;
+    }
+
+.clients-icon {
+fill: #AFB1B8;
+}
+
+.clients-icon:hover {
+    fill: #2196F3;
+}
+    
 /*----------Footer-------------------*/
 
 .footer {
