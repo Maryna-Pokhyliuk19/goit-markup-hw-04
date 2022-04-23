@@ -354,7 +354,9 @@ align-items: center;
         fill: #AFB1B8;
     }
      
-    .our-team-soc-link:hover {
+    .our-team-soc-link:hover,
+    .our-team-soc-link:focus
+    {
 background-color: #2196F3;
     }
 
@@ -385,40 +387,44 @@ background-color: #2196F3;
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
+        color: #212121;
     }
 
     .clients-list {
         display: flex;
         justify-items: center;
         margin: auto;
-        pad
+        
     }
 
     .clients-item:not(:last-child) {
         margin-right: 30px;
     }
 
-    .clients-item {
+    .clients-link {
         width: 170px;
         height: 92px;
-        fill: #AFB1B8;
+        color: #AFB1B8;
         border: 1px solid #AFB1B8;
+        border-radius: 4px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .clients-item:hover {
-        fill: #2196F3;
+    .clients-link:hover,
+    .clients-link:focus
+    {
+        color: #2196F3;
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+
     }
 
 .clients-icon {
-fill: #AFB1B8;
+fill: currentColor;
 }
 
-.clients-icon:hover {
-    fill: #2196F3;
-}
     
 /*----------Footer-------------------*/
 
