@@ -96,14 +96,21 @@ align-items:center;
 }
 .header-list {
     display: flex;
+    align-items: center;
 }
 
 .header-sublist {
     margin-left: auto;
     display: flex;
+    align-items: center;
+      
 }
 
-.header-item{
+.header-sublist-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header-sublist-item{
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -129,11 +136,9 @@ color: var(--header-mail-link-color);
     margin-right: 10px;
     
 }
-
-.header-mail-icon:hover,
-:focus {
-    fill: var(--accent-color);
-}
+.header-tel-icon {
+    fill: currentColor;
+    margin-right: 10px;
 
 }
 
@@ -261,6 +266,23 @@ margin-right: 93px;
     align-items: center;
 }
 
+.hard-skills-item::before
+{
+    display: block;
+    content: "";
+    height: 120px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+    background-image: url("../images/icons.svg#icon-antenna");
+}
 .hard-skills-subtitle {
     font-weight: 700;
     font-size: 14px;
