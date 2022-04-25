@@ -275,13 +275,25 @@ margin-right: 93px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background: #F5F4FA;
+    background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
 }
 
 .icon-antenna::before {
-    background-image: url("../images/icons.svg#icon-antenna");
+    background-image: url("../images/antenna2.svg");
+}
+
+.icon-clock::before {
+    background-image: url("../images/clock2.svg");
+}
+
+.icon-diagram::before {
+    background-image: url("../images/diagram2.svg");
+}
+
+.icon-astronaut::before {
+    background-image: url("../images/astronaut3.svg");
 }
 .hard-skills-subtitle {
     font-weight: 700;
