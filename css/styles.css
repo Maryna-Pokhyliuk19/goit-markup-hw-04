@@ -91,7 +91,7 @@ align-items:center;
 }
 
 .header-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 50px;
 }
 .header-list {
     display: flex;
@@ -126,7 +126,8 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--header-mail-link-color);
-
+display: flex;
+align-items: center;
 }
 
 .header-mail-icon {
@@ -153,7 +154,8 @@ color: var(--header-mail-link-color);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-tel-link-color);
-    
+    display: flex;
+    align-items: center;
 }
 .header-tel-link:hover,
 :focus {
@@ -205,9 +207,7 @@ margin-right: 93px;
 {
     color: var(--accent-color);
 }
-.header-link.current {
-    color: var(--accent-color);
-}
+
 
 
 
@@ -219,6 +219,7 @@ margin-right: 93px;
     url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     max-width: 1600px;
+    margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--main-content-color); 
@@ -416,9 +417,9 @@ background-color: var(--accent-color);
     .our-team-soc-list {
         display: flex;
         justify-content: center;
-        padding-right: 32px;
-        padding-bottom: 30px;
-        padding-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 30px;
+        margin-left: 32px;
     }
 
     .our-team-soc-item:not(:last-child) {
